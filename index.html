@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastre-se</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <h1>Cadastre-se</h1>
+<img src="./logo.png" alt=""  width="200" height="100"> <br> 
+
+<form>
+
+<div class="row">
+    <div class="left"><label for="name"></label><input class="input-field" placeholder="Nome" type="text" name="nome" id="name"></div>
+    <div class="right"><label for="sobrenome"></label><input placeholder="Sobrenome " class="input-field" type="text" name="sobrenome" id="sobrenome"></div>
+    
+    
+</div>
+
+<div class="row">
+    <div class="left"> <label for="telefone"></label><input placeholder="Telefone " class="input-field" type="number" name="telefone" id="telefone"></div>
+    <div class="right"> <label for="email"></label><input placeholder="E-mail " class="input-field" type="email" name="email" id="email"></div>
+   
+   
+</div>
+
+<div class="row">
+    <div class="left"><label for="genero">Gênero</label> 
+        <select class="input-field" id="genero">
+            <!-- aqui faltou definir os valores das opções -->
+        <option value="">Não quero informar</option>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+        </select>
+    </div>
+    <div class="right"><label for="password"></label><input class="input-field" placeholder="Senha" type="password" name="password" id="password">
+
+ </div> 
+</div>
+
+    <span id="spnErro" class="erro"></span>
+
+    <button id="btnCadastrar">Criar Conta</button> <br>
+   
+<p class="link"> Já possui conta? <a href="./login.html" class="possuiConta">Faça login</a></p>
+
+</form>
+
+</div>
+</div>
+<script src="cadastro.js"></script>
+</body>
+</html>
